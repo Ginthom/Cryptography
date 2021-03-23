@@ -1,0 +1,13 @@
+OneTimePad:
+  Commands:
+    - ./OneTimePad.exe e "Message"
+    - ./OneTimePad.exe d "Cipher" "Key"
+  
+  Example:
+    - ./OneTimePad.exe e "THIS IS A TEST MESSAGE"
+  
+  -Notes: Using this tool with lower case letters and other signs can lead to mistakes 
+          when decrypting, due to ascii-characters being used in the algorythm.
+          These can break when copy/pasting or alter the command arguments.
+          This happens, when certain symbols like ", /, \, etc. are part of the Cypher.
+          
